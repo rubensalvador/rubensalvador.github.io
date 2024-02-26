@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rubensalvador.github.io/sitemap.xml
+Sitemap: https://rsalvador.org/sitemap.xml
