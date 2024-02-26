@@ -1,13 +1,14 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
-nav_order: 3
-display_categories: [work, fun]
+description: My research projects.
+nav_order:
+display_categories: [current, past]
 horizontal: false
 ---
+
+:heavy_exclamation_mark: :heavy_exclamation_mark: **This page is Work In Progress** :heavy_exclamation_mark: :heavy_exclamation_mark:
 
 <!-- pages/projects.md -->
 <div class="projects">
