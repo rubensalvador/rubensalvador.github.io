@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 16th February 1979
     - name: Contact
-      value: ruben [dot] salvador [at] centralesupelec [dot] fr
+      value: ruben.salvador [at] inria.fr/centralesupelec.fr
     - name: Languages
       value: Spanish (native), English (fluent), French (getting there)
 
@@ -43,7 +43,11 @@
   contents:
     - title: Associate Professor
       institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://www.irisa.fr/en'>IRISA</a>, <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a> | <a href='https://team.inria.fr/sushi/'>SUSHI team</a> | Rennes, France
-      year: 2019 - today
+      year: 2023 - today
+      description:
+    - title: Associate Professor
+      institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://www.ietr.fr/'>IETR </a> | Rennes, France
+      year: 2019 - 2023
       description:
     - title: Visiting Professor
       institution: INSA Rennes & IETR, Rennes, France (5 months)
