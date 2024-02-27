@@ -42,7 +42,7 @@
   type: time_table
   contents:
     - title: Associate Professor
-      institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://team.inria.fr/cidre/'>CIDRE team</a> | <a href='https://www.irisa.fr/en'>IRISA</a> - <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a> | Rennes, France
+      institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://www.irisa.fr/en'>IRISA</a>, <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a> | <a href='https://team.inria.fr/sushi/'>SUSHI team</a> | Rennes, France
       year: 2019 - today
       description:
     - title: Visiting Professor

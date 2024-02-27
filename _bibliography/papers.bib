@@ -1,6 +1,58 @@
 ---
 ---
 
+@inproceedings{lee_AeroConf_2024,
+  abbr={AeroConf},
+  bibtex_show={true},
+  title = {On-Board {{Payload Data Processing Combined}} with the {{Roofline Model}} for {{Hardware}}/{{Software Design}}},
+  booktitle = {{{AeroConf}} 2024 - {{IEEE Aerospace Conference}}},
+  author = {Lee, Seungah and Casseau, Emmanuel and Kritikakou, Angeliki and Sentieys, Olivier and Salvador, Ruben and Galizzi, Julien},
+  year = {2024},
+  month = mar,
+  pages = {1},
+  langid = {english},
+  html = {https://inria.hal.science/hal-04423185/},
+  abstract = { High-performance on-board payload data processing has become more interesting with the development of radiationhardened multiprocessor System-on-chip (MPSoC). As recent space-qualified MPSoCs include Arm Central Processing Units (CPUs) and Field Programmable Gate Arrays (FPGAs), an efficient design method is required to deal with complex heterogeneous embedded systems. Both data bit-width (data accuracy) and processing performance are important in astronomy, thus the design methodology should concern application-specific Multi-Objective Optimization Problems (MOOPs). This paper proposes to combine the roofline performance model with Design Space Exploration (DSE) of hardware/software designs as a methodology. We use High-Level Synthesis (HLS) for FPGA design to configure different hardware architectures based on C/C++ and pragmas. We develop a benchmark for payload data processing on Arm CPUs and embedded FPGA on a heterogeneous MPSoC by adapting open-source libraries for one of the most commonly used algorithms to provide validated libraries to payload teams. The benchmark takes as constraints the SVOM ECLAIRs payload requirements, and as input data the CCSDS test images, executes applications, and verifies output data. We chose an AMD-Xilinx Zynq UltraScale+ evaluation board and the two-Dimensional Fast Fourier Transform (2-D FFT) as a DSE use case. We designed the benchmark on an Arm Cortex-A53 in bare-metal and an embedded FPGA based on Vitis HLS. The results show a customized roofline model with the hardware/software design. The implemented design has 1.6-55 times faster performance compared to the payload execution time requirement. Based on the proposed roofline model and the DSE results, future payload teams can study the trade-off between execution time and area efficiency to select the most suitable implementation.}
+}
+
+@INPROCEEDINGS{lee_EDHPC_2023,
+  abbr={EDHPC},
+  bibtex_show={true},
+  author={Lee, Seungah and Sentieys, Olivier and Salvador, Ruben and Galizzi, Julien and Kritikakou, Angeliki and Casseau, Emmanuel},
+  booktitle={2023 European Data Handling & Data Processing Conference (EDHPC)},
+  title={High-Level Synthesis-Based On-board Payload Data Processing considering the Roofline Model},
+  year={2023},
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.23919/EDHPC59100.2023.10396136},
+  html = {https://inria.hal.science/hal-04294305/},
+  abstract = {On-board payload data processing can be performed by developing space-qualified heterogeneous Multiprocessor System-on-Chips (MPSoCs). We present key compute-intensive payload algorithms, based on a survey with space science researchers, including the two-dimensional Fast Fourier Transform (2-D FFT). Also, we propose to perform design space exploration by combining the roofline performance model with High-Level Synthesis (HLS) for hardware accelerator architecture design. The roofline model visualizes the limits of a given architecture regarding Input/Output (I/O) bandwidth and computational performance, along with the achieved performance for different implementations. HLS is an interesting option in developing FPGA-based on-board processing applications for payload teams that need to adjust architecture specifications through design reviews and have limited expertise in Hardware Description Languages (HDLs). In this paper, we focus on an FPGA-based MPSoC thanks to recently released radiation-hardened heterogeneous embedded platforms.}
+}
+
+
+@inproceedings{guillaume_CARDIS_2023,
+  selected={true},
+  abbr={CARDIS},
+  bibtex_show={true},
+  title = {Attacking at~{{Non-harmonic Frequencies}} in~{{Screaming-Channel Attacks}}},
+  booktitle = {Smart {{Card Research}} and {{Advanced Applications}}},
+  author = {Guillaume, Jeremy and Pelcat, Maxime and Nafkha, Amor and Salvador, Rub{\'e}n},
+  editor = {Bhasin, Shivam and Roche, Thomas},
+  year = {2023},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {87--106},
+  publisher = {{Springer Nature Switzerland}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-031-54409-5_5},
+  copyright = {All rights reserved},
+  isbn = {978-3-031-54409-5},
+  langid = {english},
+  arxiv = {2311.15832},
+  abstract = {Screaming-channel attacks enable Electromagnetic (EM) Side-Channel Attacks (SCAs) at larger distances due to higher EM leakage energies than traditional SCAs, relaxing the requirement of close access to the victim. This attack can be mounted on devices integrating Radio Frequency (RF) modules on the same die as digital circuits, where the RF can unintentionally capture, modulate, amplify, and transmit the leakage along with legitimate signals. Leakage results from digital switching activity, so previous works hypothesized that this leakage would appear at multiples of the digital clock frequency, i.e., harmonics.
+  This work demonstrates that compromising signals appear not only at the harmonics and that leakage at non-harmonics can be exploited for successful attacks. Indeed, the transformations undergone by the leaked signal are complex due to propagation effects through the substrate and power and ground planes, so the leakage also appears at other frequencies. We first propose two methodologies to locate frequencies that contain leakage and demonstrate that it appears at non-harmonic frequencies. Then, our experimental results show that screaming-channel attacks at non-harmonic frequencies can be as successful as at harmonics when retrieving a 16-byte AES key. As the RF spectrum is polluted by interfering signals, we run experiments and show successful attacks in a more realistic, noisy environment where harmonic frequencies are contaminated by multi-path fading and interference. These attacks at non-harmonic frequencies increase the attack surface by providing attackers with more potential frequencies where attacks can succeed.}
+}
+
 @inproceedings{khosroshahi2023assessment,
   abbr={IWAIT},
   bibtex_show={true},
@@ -71,6 +123,8 @@
    year={2021},
    publisher={Multidisciplinary Digital Publishing Institute},
    doi = {10.3390/app11156790},
+   arxiv = {2110.11290},
+   html = {https://inria.hal.science/hal-03324220/},
    abstract = {{ During the last decade, Deep Neural Networks (DNN) have progressively been integrated on all types of platforms, from data centers to embedded systems including low-power processors and, recently, FPGAs. Neural Networks (NN) are expected to become ubiquitous in IoT systems by transforming all sorts of real-world applications, including applications in the safety-critical and security-sensitive domains. However, the underlying hardware security vulnerabilities of embedded NN implementations remain unaddressed. In particular, embedded DNN implementations are vulnerable to Side-Channel Analysis (SCA) attacks, which are especially important in the IoT and edge computing contexts where an attacker can usually gain physical access to the targeted device. A research field has therefore emerged and is rapidly growing in terms of the use of SCA including timing, electromagnetic attacks and power attacks to target NN embedded implementations. Since 2018, research papers have shown that SCA enables an attacker to recover inference models architectures and parameters, to expose industrial IP and endangers data confidentiality and privacy. Without a complete review of this emerging field in the literature so far, this paper surveys state-of-the-art physical SCA attacks relative to the implementation of embedded DNNs on micro-controllers and FPGAs in order to provide a thorough analysis on the current landscape. It provides a taxonomy and a detailed classification of current attacks. It first discusses mitigation techniques and then provides insights for future research leads.}}
 }
 
