@@ -2,122 +2,96 @@
   type: map
   contents:
     - name: Full Name
-      value: Rubén Salvador
+      value: Albert Einstein
     - name: Date of Birth
-      value: 16th February 1979
-    - name: Contact
-      value: ruben.salvador [at] inria.fr/centralesupelec.fr
+      value: 14th March 1879
     - name: Languages
-      value: Spanish (native), English (fluent), French (getting there)
+      value: English, German
 
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in Industrial Electronics
-      institution: Universidad Politécnica de Madrid
-      year: 2015
+    - title: PhD
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1905
       description:
-        - 'Thesis: <i>Parametric and structural self-adaptation of embedded systems using evolvable hardware</i>'
-        - 'Supervised by <a href="http://www.cei.upm.es/people/faculty/eduardo-de-la-torre/"><b>Prof. Eduardo de la Torre</b></a> and <a href="https://www.fit.vut.cz/person/sekanina/" target="_blank"><b>Prof. Lukas Sekanina</b></a>'
-    - title: M.Sc. in Industrial Electronics
-      institution: Universidad Politécnica de Madrid
-      year: 2007
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Federal teaching diploma
+      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+      year: 1900
       description:
-        - 'Thesis: <i>Embedded intelligence on chip</i>'
-        - 'Supervised by <a href="http://www.cei.upm.es/people/faculty/felix-moreno/"><b>Prof. Félix Moreno</b></a>, UPM'
-    - title: M.Eng. in Electronics Engineering
-      institution: Universidad de Alcalá de Henares
-      year: 2004
-      description:
-        - 'Thesis: <i>Research and development of a system for the implementation of audiometric calibration procedures</i>'
-        - 'Supervised by <a href="http://www.i2a2.upm.es/quienes-somos/personal/mariano-ruiz/?lang=en"><b>Prof. Mariano Ruiz</b></a>, UPM'
-    - title: B.Eng. in Telecommunications Engineering
-      institution: Universidad Politécnica de Madrid
-      year: 2001
-      description:
-        - 'Thesis: <i>Implementation of narrow-band noise generation algorithms according to ANSI S3.6 1996</i>'
-        - 'Supervised by <a href="http://www.i2a2.upm.es/quienes-somos/personal/mariano-ruiz/?lang=en"><b>Prof. Mariano Ruiz</b></a>, UPM'
+        - Description 1.
+        - Description 2.
 
-- title: Positions and career
+- title: Experience
   type: time_table
   contents:
-    - title: Associate Professor
-      institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://www.irisa.fr/en'>IRISA</a>, <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a> | <a href='https://team.inria.fr/sushi/'>SUSHI team</a> | Rennes, France
-      year: 2023 - today
+    - title: Professor of Theoretical Physics
+      institution: Institute for Advanced Study, Princeton University
+      year: 1933 - 1955
       description:
-    - title: Associate Professor
-      institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://www.ietr.fr/'>IETR </a> | Rennes, France
-      year: 2019 - 2023
-      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
     - title: Visiting Professor
-      institution: INSA Rennes & IETR, Rennes, France (5 months)
-      year: 2017
-    - title: Assistant Professor
-      institution: Universidad Politécnica de Madrid, Madrid, Spain
-      year: 2017 - 2019
+      institution: California Institute of Technology, Pasadena, California, US
+      year: 1933
       description:
-        - School of Telecommunications Systems Engineering (ETSIST)
-        - Research Center on Software Technologies & Multimedia Systems (CITSEM)
-    - title: Teaching Assistant
-      institution: Universidad Politécnica de Madrid, Madrid, Spain
-      year: 2012 - 2017
-      description:
-        - School of Telecommunications Systems Engineering (ETSIST)
-        - Research Center on Software Technologies & Multimedia Systems (CITSEM)
-    - title: Visiting PhD Researcher
-      institution: Brno University of Technology, Brno, Czech Republic (4 months)
-      year: 2009
-    - title: PhD Researcher
-      institution: Universidad Politécnica de Madrid, Madrid, Spain
-      year: 2008 - 2011
-      description:
-        - School of Industrial Engineering (ETSII)
-        - Center of Industrial Electronics (CEI)
-    - title: Research Engineer
-      institution: Universidad Politécnica de Madrid, Madrid, Spain
-      year: 2006 - 2007
-      description:
-        - Center of Industrial Electronics (CEI)
-    - title: Research Engineer
-      institution: Universidad Politécnica de Madrid, Madrid, Spain
-      year: 2005 - 2006
-      description:
-        - University Institute for Automobile Research (INSIA)
+        - Description 1.
+        - Description 2.
 
-- title: Accreditations and Qualifications
+    - title: Director
+      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+      year: 1917-1933
+
+    - title: Professor of Theoretical Physics
+      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+      year: 1911 - 1917
+      description:
+
+    - title: Associate Professor of Theoretical Physics
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1909 - 1911
+
+- title: Open Source Projects
   type: time_table
   contents:
-    - title: Maître de Conférences (~Assistant/Associate Professor)
-      institution: CNU sections 61 & 63, France
-      year: 2019
-    - title: Assistant Professor
-      institution: Spain
-      year: 2016
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items: 
-#         - Nobel Prize in Physics 
-#         - Matteucci Medal
-#     - year: 2029
-#       items: 
-#         - Max Planck Medal
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 1921
+      items:
+        - Nobel Prize in Physics
+        - Matteucci Medal
+    - year: 2029
+      items:
+        - Max Planck Medal
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items:
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
 
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
