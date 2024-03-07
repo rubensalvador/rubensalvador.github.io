@@ -8,10 +8,11 @@ category: current
 ---
 
 
-> **We are hiring!!** :mega:
+> :mega::mega: **We are hiring!!** :mega::mega:
 > 
-> Postdoc position: [Securing DNN Hardware Accelerators Against Side-Channel Attacks](https://www.ietr.fr/securing-dnn-hardware-accelerators-against-side-channel-attacks)
-
+> 1 PhD/Postdoc position: [Side-Channel Resistant DNN Hardware Accelerators](/assets/pdf/ATTILA_PhD_PD_call_2024.pdf)
+>
+> 2/3 payed internships: [Side-Channel Resistant DNN Hardware Accelerators](/assets/pdf/Internships_ATTILA_2024.pdf)
 
 
 ## Context and objectives
@@ -70,12 +71,21 @@ ATIILA's methodology comprises 3 steps:
 
 ### The team
 
-| Coordinator | Lab permanent staff | PhD | Postdoc | 
-|:---         |:---             |:--- |:---     |:---     |
-| [Rubén Salvador](https://rsalvador.org/) <br/> Inria - IRISA, CentraleSupélec| [Maria Méndez Real](https://www.ietr.fr/maria-mendez-real) <br /> IETR, Polytech Université de Nantes <br />[Jean-Christophe Prévotet](https://jprevote.perso.insa-rennes.fr/) <br /> IETR, INSA Rennes<br />[Amor Nafkha](https://anafkha.github.io/) <br />IETR, CentraleSupélec | [Racim Boussa](https://www.linkedin.com/in/racim-boussa-a79208128/) <br /> IETR, CentraleSupélec | [Opened position](https://www.ietr.fr/securing-dnn-hardware-accelerators-against-side-channel-attacks) |
+**Coordinator:**
+<br />
+[Rubén Salvador](https://rsalvador.org/), Inria - IRISA, CentraleSupélec
 
-We are hiring!!
-- Postdoc opening: https://www.ietr.fr/securing-dnn-hardware-accelerators-against-side-channel-attacks
+**Permanent staff:**
+<br />
+[Maria Méndez Real](https://www.ietr.fr/maria-mendez-real), IETR, Polytech Université de Nantes
+<br />
+[Jean-Christophe Prévotet](https://jprevote.perso.insa-rennes.fr/), IETR, INSA Rennes
+<br />
+[Amor Nafkha](https://anafkha.github.io/), IETR, CentraleSupélec
+
+**PhD student**
+<br />
+[Racim Boussa](https://www.linkedin.com/in/racim-boussa-a79208128/), IETR, CentraleSupélec
 
 
 ## Publications
