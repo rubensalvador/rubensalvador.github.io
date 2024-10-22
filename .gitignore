@@ -12,7 +12,7 @@ vendor
 
 ## Editors:
 # Kate
-.kate-swp
+.*kate-swp
 
 # VS Code files for those working on multiple tools
 .vscode/

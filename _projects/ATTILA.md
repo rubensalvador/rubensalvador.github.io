@@ -10,9 +10,8 @@ category: current
 
 > :mega::mega: **We are hiring!!** :mega::mega:
 > 
-> 1 PhD/Postdoc position: [Side-Channel Resistant DNN Hardware Accelerators](/assets/pdf/ATTILA_PhD_PD_call_2024.pdf)
 >
-> 2/3 payed internships: [Side-Channel Resistant DNN Hardware Accelerators](/assets/pdf/Internships_ATTILA_2024.pdf)
+> 2/3 payed internships: [Side-Channel Security of Deep Learning Implementations](/assets/pdf/Internships_ATTILA_2025.pdf)
 
 
 ## Context and objectives
@@ -73,7 +72,7 @@ ATIILA's methodology comprises 3 steps:
 
 **Coordinator:**
 <br />
-[Rubén Salvador](https://rsalvador.org/), Inria - IRISA, CentraleSupélec
+[Rubén Salvador](https://rsalvador.org/), IRISA, Inria, CentraleSupélec
 
 **Permanent staff:**
 <br />
@@ -87,5 +86,8 @@ ATIILA's methodology comprises 3 steps:
 <br />
 [Racim Boussa](https://www.linkedin.com/in/racim-boussa-a79208128/), IETR, CentraleSupélec
 
+**Postdoc**
+<br />
+[Lorenzo Casalino](https://doktorc.github.io/), IRISA, Inria, CentraleSupélec
 
 ## Publications
