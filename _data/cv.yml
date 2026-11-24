@@ -11,28 +11,28 @@ cv:
         institution: Universidad Politécnica de Madrid
         date: 2015
         highlights:
-          - 'Thesis: <i>Parametric and structural self-adaptation of embedded systems using evolvable hardware</i>'
+          - "Thesis: <i>Parametric and structural self-adaptation of embedded systems using evolvable hardware</i>"
           - Supervised by <a href="https://www.cei.upm.es/people/faculty/eduardo-de-la-torre/"><b>Prof. Eduardo de la Torre</b></a> and <a href="https://www.fit.vut.cz/person/sekanina/" target="_blank"><b>Prof. Lukas Sekanina</b></a>
 
       - studyType: M.Sc. in Industrial Electronics
         institution: Universidad Politécnica de Madrid
         date: 2007
         highlights:
-          - 'Thesis: <i>Embedded intelligence on chip</i>'
+          - "Thesis: <i>Embedded intelligence on chip</i>"
           - Supervised by <a href="https://www.cei.upm.es/people/faculty/felix-moreno/"><b>Prof. Félix Moreno</b></a>, UPM
 
       - studyType: M.Eng. in Electronics Engineering
         institution: Universidad de Alcalá de Henares
         date: 2004
         highlights:
-          - 'Thesis: <i>Research and development of a system for the implementation of audiometric calibration procedures</i>'
+          - "Thesis: <i>Research and development of a system for the implementation of audiometric calibration procedures</i>"
           - Supervised by <a href="http://www.i2a2.upm.es/quienes-somos/personal/mariano-ruiz/?lang=en"><b>Prof. Mariano Ruiz</b></a>, UPM
 
       - studyType: B.Eng. in Telecommunications Engineering
         institution: Universidad Politécnica de Madrid
         date: 2001
         highlights:
-          - 'Thesis: <i>Implementation of narrow-band noise generation algorithms according to ANSI S3.6 1996</i>'
+          - "Thesis: <i>Implementation of narrow-band noise generation algorithms according to ANSI S3.6 1996</i>"
           - Supervised by <a href="http://www.i2a2.upm.es/quienes-somos/personal/mariano-ruiz/?lang=en"><b>Prof. Mariano Ruiz</b></a>, UPM
 
     Experience:

@@ -1,0 +1,17 @@
+// Site-specific style fixes (rsalvador.org), loaded by the local assets/css/main.scss.
+// Keep this file small; everything else comes from the al-folio gems.
+
+// CV page (al_folio_cv):
+// - al_folio_core styles every `table:not(.table) td` with a top border; the CV date tables
+//   (table.table-cv) inherited it, drawing a thin line above each date badge;
+// - without Bootstrap, the CV lists (ul.list-group) kept the browser's bullets and indent,
+//   showing a dot at the lower left of each date badge.
+table.table-cv td,
+table.table-cv th {
+  border-top: none;
+}
+
+.cv ul.list-group {
+  list-style: none;
+  padding-left: 0;
+}
