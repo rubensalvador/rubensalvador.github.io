@@ -659,6 +659,30 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
 
+  // Type filter buttons (_pages/publications.md)
+  .pub-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+
+    button {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.7rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 1rem;
+      background: transparent;
+      color: var(--global-theme-color);
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        background: var(--global-theme-color);
+        color: var(--global-hover-text-color);
+      }
+    }
+  }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -699,14 +723,19 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
+        min-height: 2rem;
         margin-bottom: 0.5rem;
 
+        // Long labels (e.g. "Elsevier Fusion Eng. Des.") wrap inside the badge column
+        // instead of running into the entry text.
         abbr {
           display: inline-block;
+          max-width: 100%;
+          white-space: normal;
+          line-height: 1.3;
           background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
 
           a {
             color: white;

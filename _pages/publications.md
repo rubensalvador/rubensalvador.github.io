@@ -11,6 +11,63 @@ nav_order: 3
 <!-- _pages/publications.md -->
 <div class="publications">
 
+<!-- Type filter: all shown by default; a button shows only that type (press it again, or All, to show everything).
+     data-filter = keywords values of the bib (space-separated). An entry matches if any of its keywords
+     (comma-separated, data-keywords in _layouts/bib.liquid) is in the list. Buttons without entries are hidden
+     (e.g. Tutorials, ready for non-invited tutorials: keywords = {tutorial}). -->
+<div class="pub-filter" role="group" aria-label="Filter publications by type">
+  <button type="button" class="active" data-filter="all">All</button>
+  <button type="button" data-filter="journal">Journals</button>
+  <button type="button" data-filter="conference">Conferences</button>
+  <button type="button" data-filter="chapter">Chapters</button>
+  <button type="button" data-filter="demo poster">Demos &amp; posters</button>
+  <button type="button" data-filter="invited">Invited talks</button>
+  <button type="button" data-filter="tutorial">Tutorials</button>
+  <button type="button" data-filter="seminar">Seminars</button>
+  <button type="button" data-filter="myphd pthesis">Theses</button>
+</div>
+
 {% bibliography %}
 
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('.pub-filter button');
+    var items = document.querySelectorAll('.publications ol.bibliography > li');
+    function keywordsOf(li) {
+      var row = li.querySelector('[data-keywords]');
+      return row ? row.getAttribute('data-keywords').split(',').map(function (k) { return k.trim(); }) : [];
+    }
+    function matches(li, wanted) {
+      return !wanted || keywordsOf(li).some(function (k) { return wanted.indexOf(k) !== -1; });
+    }
+    // Hide the buttons that match no entry
+    buttons.forEach(function (b) {
+      var f = b.getAttribute('data-filter');
+      if (f === 'all') return;
+      var wanted = f.split(' ');
+      if (!Array.prototype.some.call(items, function (li) { return matches(li, wanted); })) b.style.display = 'none';
+    });
+    function apply(filter) {
+      var wanted = filter === 'all' ? null : filter.split(' ');
+      items.forEach(function (li) {
+        li.style.display = matches(li, wanted) ? '' : 'none';
+      });
+      // Hide the year headings left without visible entries
+      document.querySelectorAll('.publications h2.bibliography').forEach(function (h) {
+        var ol = h.nextElementSibling;
+        var any = ol && Array.prototype.some.call(ol.children, function (li) { return li.style.display !== 'none'; });
+        h.style.display = any ? '' : 'none';
+        if (ol) ol.style.display = any ? '' : 'none';
+      });
+      buttons.forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-filter') === filter); });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = b.getAttribute('data-filter');
+        apply(b.classList.contains('active') && f !== 'all' ? 'all' : f);
+      });
+    });
+  });
+</script>
