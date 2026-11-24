@@ -1,0 +1,30 @@
+{%- comment -%}
+  Site hook, included by al_folio_core's bib.liquid just before the venue line is printed
+  (no layout override needed). It:
+  1. exposes the entry's keywords for the publication type filter in _pages/publications.md;
+  2. rebuilds the venue (`entrytype`): journal (articles); otherwise booktitle ("In ...");
+     then school or institution (theses); then eventtitle or howpublished (misc, unpublished).
+     \textsc is stripped, and the location is not shown (the stock layout appends it).
+{%- endcomment -%}
+<span hidden data-keywords="{{ entry.keywords }}"></span>
+{%- assign hook_thesis = 'thesis,mastersthesis,phdthesis' | split: ',' -%}
+{%- assign hook_venue = '' -%}
+{%- assign hook_prefix = '' -%}
+{%- if entry.type == 'article' -%}
+  {%- assign hook_venue = entry.journal -%}
+{%- elsif entry.booktitle -%}
+  {%- assign hook_venue = entry.booktitle -%}
+  {%- assign hook_prefix = 'In ' -%}
+{%- elsif hook_thesis contains entry.type or entry.school or entry.institution -%}
+  {%- assign hook_venue = entry.school | default: entry.institution -%}
+{%- elsif entry.eventtitle -%}
+  {%- assign hook_venue = entry.eventtitle -%}
+{%- elsif entry.howpublished -%}
+  {%- assign hook_venue = entry.howpublished -%}
+{%- endif -%}
+{%- assign hook_venue = hook_venue | replace: '\textsc', '' | strip -%}
+{%- if hook_venue != '' -%}
+  {%- capture entrytype -%}<em>{{ hook_prefix }}{{ hook_venue }}</em>{%- endcapture -%}
+{%- else -%}
+  {%- assign entrytype = '' -%}
+{%- endif -%}

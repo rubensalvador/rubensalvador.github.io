@@ -23,7 +23,7 @@ nav_order: 3
 
 <!-- Type filter: all shown by default; a button shows only that type (press it again, or All, to show everything).
      data-filter = keywords values of the bib (space-separated). An entry matches if any of its keywords
-     (comma-separated, data-keywords in _layouts/bib.liquid) is in the list. Buttons without entries are hidden
+     (comma-separated, data-keywords from _includes/hook/bib.liquid) is in the list. Buttons without entries are hidden
      (e.g. Tutorials, ready for non-invited tutorials: keywords = {tutorial}). -->
 <div class="pub-filter" role="group" aria-label="Filter publications by type">
   <button type="button" class="active" data-filter="all">All</button>

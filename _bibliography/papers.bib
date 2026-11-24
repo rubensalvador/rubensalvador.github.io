@@ -1,5 +1,5 @@
 @inproceedings{quere_SP_2027,
-   html        = {https://hal.science/hal-05787490/},
+   hal         = {hal-05787490},
    abbr        = {IEEE S&P},
    bibtex_show = {true},
    abstract    = {For over a decade, software-based microarchitectural attacks have mainly exploited timing differences to infer information from DRAM. However, recent timing-based approaches failed to characterize some precise microarchitectural behaviors, either due to defense or optimization mechanisms. In this work, we show that unprivileged millisecond- and milliampere-resolution power sensors on modern Arm SoCs are sufficient to recover DRAM mapping functions and reveal the data dependence of memory accesses without any timers. We present HOMARD, a new methodology that reads DRAM activity from this benign telemetry, overcoming the mentioned timing limitations. Building on this, we introduce two new attack primitives. HOMARD-RE is a hierarchy-aware linear-algebraic method that reverse-engineers the DRAM addressing functions from power alone. HOMARD-DATA recovers the Hamming weight of a fetched cache line through joint-power rail templating, and the secret byte values that the CPU moves across the DRAM bus through correlation power analysis on the same rails. Across an AMD ZCU102, a Raspberry Pi 5, and a multi-chip-based LPDDR4 NVIDIA Jetson TX2, HOMARD-RE succeeds where row-buffer timing methods fail. On the Pi 5, HOMARD-DATA classifies 9 Hamming-weight levels at 81.5 % accuracy and recovers secret bytes in minutes by correlating the rail current with the data-dependent bit toggling between neighbors in a row. Both primitives work with an architectural load or a mispredicted Spectre-RSB path on which no value is architecturally read. Together, these results establish unprivileged power telemetry as an independent side channel for profiled attacks on the microarchitecture, particularly powerful when timing falls silent.},
@@ -14,7 +14,7 @@
 }
 
 @inproceedings{abgrall_RTSS_2026,
-   html        = {https://hal.science/hal-05727201/},
+   hal         = {hal-05727201},
    abbr        = {IEEE RTSS},
    bibtex_show = {true},
    abstract    = {Safety-critical real-time systems must satisfy multiple dependability requirements, notably time predictability and security. In such systems, tasks must complete within bounded and known execution times, typically characterised through Worst-Case Execution Time (WCET) analysis. At the same time, DRAM-based platforms are increasingly sensitive to the RowHammer read-disturbance security vulnerability, which has motivated the development of numerous hardware and software countermeasures in both academia and industry. However, the impact of these defences is generally evaluated in terms of average-case performance, a metric that is insufficient for safety-critical real-time systems, where worst-case behaviour is the primary concern. In this paper, we study the impact of RowHammer countermeasures based on hardware counters on the timing behaviour of real-time systems. We use a Per-Row-Activation-Counter (PRAC) countermeasure as a case study, standardised for recent DDR5 memories, and show that it can introduce significant timing variations. Based on this observation, we introduce JENGA, an attack in which an attacker-controlled task manipulates the internal state of the RowHammer countermeasure mechanism to increase the execution time of a victim real-time task beyond its expected WCET. We implement JENGA in a gem5 and Ramulator 2.0 simulation environment and evaluate its impact on TACLeBench workloads. We show that such an attack can delay tasks up to 200% of their WCET, making the initial time-safety assumptions unsafe. To address this issue, we derive a safe analytical bound that accounts for mitigation-induced delays in WCET analysis for DRAM systems protected by hardware countermeasures, such as PRAC-N.},
@@ -30,7 +30,7 @@
 }
 
 @article{guillaume_TIFS_2026,
-   html        = {https://inria.hal.science/hal-05694498/},
+   hal         = {hal-05694498},
    abbr        = {IEEE TIFS},
    bibtex_show = {true},
    arxiv       = {2504.02979},
@@ -49,7 +49,7 @@
 
 
 @inproceedings{quere_HOST_2026,
-   html        = {https://hal.science/hal-05593696/},
+   hal         = {hal-05593696},
    doi         = {10.1109/HOST68814.2026.11604695},
    abbr        = {IEEE HOST},
    bibtex_show = {true},
@@ -66,7 +66,7 @@
 }
 
 @inproceedings{casalino_HOST_2026,
-   html        = {https://hal.science/hal-05538224/},
+   hal         = {hal-05538224},
    doi         = {10.1109/HOST68814.2026.11604810},
    abbr        = {IEEE HOST},
    bibtex_show = {true},
@@ -85,7 +85,7 @@
 }
 
 @article{sancho_JVCIR_2026,
-   html        = {https://inria.hal.science/hal-05487522/},
+   hal         = {hal-05487522},
    abbr        = {Elsevier JVCIR},
    bibtex_show = {true},
    title = {{{eGoRG}}: {{GPU-accelerated}} Depth Estimation for Immersive Video Applications Based on Graph Cuts},
@@ -104,7 +104,7 @@
 }% JIF: 3.1. SJR Q1
 
 @inproceedings{plin_knockknock_2026,
-   html        = {https://hal.science/hal-05273255/},
+   hal         = {hal-05273255},
    abbr        = {uASC},
    bibtex_show = {true},
    arxiv       = {2509.19568},
@@ -124,7 +124,7 @@
 }
 
 @inproceedings{martinez_DFT_2025,
-   html        = {https://hal.science/hal-05195618/},
+   hal         = {hal-05195618},
    abbr        = {IEEE DFT},
    bibtex_show = {true},
    title = {{{LAD-IXoC}}: {{Loop-Based Attack Detection}} with {{Integrated Xor Filter}} and {{CMS}}},
@@ -142,7 +142,7 @@
 }
 
 @inproceedings{Randriatsiferana_INSCIT_2025,
-   html        = {https://ird.hal.science/ird-05448291/},
+   hal         = {ird-05448291},
    abbr        = {IEEE INSCIT},
    bibtex_show = {true},
    author={Randriatsiferana, Rivo and Salvador, Ruben and Tamarin, Ollivier},
@@ -159,7 +159,7 @@
 }
 
 @inproceedings{lomet_IOLTS_2025,
-   html        = {https://inria.hal.science/hal-05120223/},
+   hal         = {hal-05120223},
    abbr        = {IEEE IOLTS},
    bibtex_show = {true},
    arxiv       = {2506.15432},
@@ -177,7 +177,7 @@
 }
 
 @inproceedings{palumbo_IOLTS_2025,
-   html        = {https://hal.science/hal-05055204/},
+   hal         = {hal-05055204},
    abbr        = {IEEE IOLTS},
    bibtex_show = {true},
    arxiv       = {2506.15417},
@@ -195,7 +195,7 @@
 }
 
 @inproceedings{palumbo_gem5HTs_2025,
-   html        = {https://hal.science/hal-05044677/},
+   hal         = {hal-05044677},
    abbr        = {ACM CF},
    bibtex_show = {true},
    author = {Palumbo, Alessandro and Salvador, Ruben},
@@ -226,7 +226,7 @@
 }
 
 @inproceedings{quere_RESSI_2025,
-   html        = {https://hal.science/hal-05266486/},
+   hal         = {hal-05266486},
    abbr        = {RESSI},
    bibtex_show = {true},
    abstract    = {The widespread adoption of FPGA-accelerated computing in embedded and cloud environments introduces new side-channel threats due to shared hardware resources. This work investigates DRAM access patterns as a leakage source to fingerprint CPU activity, examining both SoC-FPGA and cloud-based co-processor models. In SoC environments, cache-miss-induced DRAM activity generates measurable power fluctuations that can be remotely observed. While previous research has detected these fluctuations using external electromagnetic probes for side-channel-based disassembly, we assess whether embedded FPGA sensors can achieve similar results, enabling attackers to infer CPU operations without physical access. However, in cloud-based co-processor models, where FPGA-CPU interactions occur over PCIe and RDMA, large-scale power management appears to significantly lower the Signal-to-Noise Ratio (SNR), potentially making power side channels more challenging to exploit compared to SoC-FPGAs. Given this uncertainty, we investigate the feasibility of power-based leakage while also exploring timing-based side channels leveraging PCIe contention and RDMA latency variations, which have been shown to reveal workload characteristics. By evaluating both power and timing leakage across these architectures, we comprehensively assess side-channel risks in FPGA-accelerated platforms and emphasize the need for stronger isolation mechanisms.},
@@ -244,7 +244,7 @@
 }
 
 @article{rivo_ACCESS_2024,
-   html        = {https://hal.science/hal-04596488/},
+   hal         = {hal-04596488},
    abbr        = {IEEE Access},
    bibtex_show = {true},
    author={Randriatsiferana, Rivo and Lorandel, Jordane and Salvador, Ruben and Moy, Christophe},
@@ -273,7 +273,7 @@
    keywords = {conference},
    abbr        = {IEEE AeroConf},
    bibtex_show = {true},
-   html        = {https://inria.hal.science/hal-04423185/},
+   hal         = {hal-04423185},
    abstract    = { High-performance on-board payload data processing has become more interesting with the development of radiationhardened multiprocessor System-on-chip (MPSoC). As recent space-qualified MPSoCs include Arm Central Processing Units (CPUs) and Field Programmable Gate Arrays (FPGAs), an efficient design method is required to deal with complex heterogeneous embedded systems. Both data bit-width (data accuracy) and processing performance are important in astronomy, thus the design methodology should concern application-specific Multi-Objective Optimization Problems (MOOPs). This paper proposes to combine the roofline performance model with Design Space Exploration (DSE) of hardware/software designs as a methodology. We use High-Level Synthesis (HLS) for FPGA design to configure different hardware architectures based on C/C++ and pragmas. We develop a benchmark for payload data processing on Arm CPUs and embedded FPGA on a heterogeneous MPSoC by adapting open-source libraries for one of the most commonly used algorithms to provide validated libraries to payload teams. The benchmark takes as constraints the SVOM ECLAIRs payload requirements, and as input data the CCSDS test images, executes applications, and verifies output data. We chose an AMD-Xilinx Zynq UltraScale+ evaluation board and the two-Dimensional Fast Fourier Transform (2-D FFT) as a DSE use case. We designed the benchmark on an Arm Cortex-A53 in bare-metal and an embedded FPGA based on Vitis HLS. The results show a customized roofline model with the hardware/software design. The implemented design has 1.6-55 times faster performance compared to the payload execution time requirement. Based on the proposed roofline model and the DSE results, future payload teams can study the trade-off between execution time and area efficiency to select the most suitable implementation.}
 }
 
@@ -288,13 +288,13 @@
   number={},
   pages={1-7},
   doi={10.23919/EDHPC59100.2023.10396136},
-  html = {https://inria.hal.science/hal-04294305/},
+  hal  = {hal-04294305},
   keywords = {conference},
    abstract    = {On-board payload data processing can be performed by developing space-qualified heterogeneous Multiprocessor System-on-Chips (MPSoCs). We present key compute-intensive payload algorithms, based on a survey with space science researchers, including the two-dimensional Fast Fourier Transform (2-D FFT). Also, we propose to perform design space exploration by combining the roofline performance model with High-Level Synthesis (HLS) for hardware accelerator architecture design. The roofline model visualizes the limits of a given architecture regarding Input/Output (I/O) bandwidth and computational performance, along with the achieved performance for different implementations. HLS is an interesting option in developing FPGA-based on-board processing applications for payload teams that need to adjust architecture specifications through design reviews and have limited expertise in Hardware Description Languages (HDLs). In this paper, we focus on an FPGA-based MPSoC thanks to recently released radiation-hardened heterogeneous embedded platforms.}
 }
 
 @inproceedings{guillaume_CARDIS_2023,
-   html        = {https://inria.hal.science/hal-04309083/},
+   hal         = {hal-04309083},
   selected={true},
   abbr={Springer CARDIS},
   bibtex_show={true},
@@ -317,7 +317,7 @@
 }
 
 @inproceedings{khosroshahi2023assessment,
-   html        = {https://hal.science/hal-04192441/},
+   hal         = {hal-04192441},
    doi         = {10.1117/12.2666761},
   title={Assessment of multi-plenoptic 2.0 camera depth maps for DIBR},
   author={Khosroshahi, Hamed Razavi and Sancho, Jaime and Rosa, Gonzalo and Salvador, Ruben and Juarez, Eduardo and Lafruit, Gauthier and Teratani, Mehrdad},
@@ -334,7 +334,7 @@
 }
 
 @inproceedings{guillaume_VT_SiPS_2022, 
-   html        = {https://hal.science/hal-03830070/},
+   hal         = {hal-03830070},
   author={Guillaume, Jeremy and Pelcat, Maxime and Nafkha, Amor and Salvador, Ruben},  
   booktitle={2022 IEEE Workshop on Signal Processing Systems (SiPS)},
   title={Virtual Triggering: a Technique to Segment Cryptographic Processes in Side-Channel Traces},
@@ -353,7 +353,7 @@
 }
 
 @inproceedings{villa_DASIP_2022,
-   html        = {https://hal.science/hal-03884524/},
+   hal         = {hal-03884524},
   title={Data-Type Assessment for Real-Time Hyperspectral Classification in Medical Imaging},
   author={Villa, Manuel and Sancho, Jaime and Vazquez, Guillermo and Rosa, Gonzalo and Urbanos, Gemma and Martin-Perez, Alberto and Sutradhar, Pallab and Salvador, Ruben and Chavarrías, Miguel and Lagares, Alfonso and Juárez, Eduardo and Sanz, César},
   booktitle={Design and Architecture for Signal and Image Processing},
@@ -369,7 +369,7 @@
 }
 
 @article{sancho_Sensors_2021,
-   html        = {https://hal.science/hal-03280517/},
+   hal         = {hal-03280517},
   title={GoRG: Towards a GPU-Accelerated Multiview Hyperspectral Depth Estimation Tool for Medical Applications},
   author={Sancho, Jaime and Sutradhar, Pallab and Rosa, Gonzalo and Chavarrías, Miguel and Perez-Nuñez, Angel and Salvador, Ruben and Lagares, Alfonso and Juárez, Eduardo and Sanz, César},
   journal     ={Sensors},
@@ -399,7 +399,7 @@
    abbr        = {MDPI Appl. Sci.},
    bibtex_show = {true},
    selected    = {true},
-   html        = {https://inria.hal.science/hal-03324220/},
+   hal         = {hal-03324220},
    arxiv       = {2110.11290},
    abstract    = {{ During the last decade, Deep Neural Networks (DNN) have progressively been integrated on all types of platforms, from data centers to embedded systems including low-power processors and, recently, FPGAs. Neural Networks (NN) are expected to become ubiquitous in IoT systems by transforming all sorts of real-world applications, including applications in the safety-critical and security-sensitive domains. However, the underlying hardware security vulnerabilities of embedded NN implementations remain unaddressed. In particular, embedded DNN implementations are vulnerable to Side-Channel Analysis (SCA) attacks, which are especially important in the IoT and edge computing contexts where an attacker can usually gain physical access to the targeted device. A research field has therefore emerged and is rapidly growing in terms of the use of SCA including timing, electromagnetic attacks and power attacks to target NN embedded implementations. Since 2018, research papers have shown that SCA enables an attacker to recover inference models architectures and parameters, to expose industrial IP and endangers data confidentiality and privacy. Without a complete review of this emerging field in the literature so far, this paper surveys state-of-the-art physical SCA attacks relative to the implementation of embedded DNNs on micro-controllers and FPGAs in order to provide a thorough analysis on the current landscape. It provides a taxonomy and a detailed classification of current attacks. It first discusses mitigation techniques and then provides insights for future research leads.}}
 }% JIF 2.5, SJR Q2 Computer Science Applications
@@ -437,7 +437,7 @@
 }
 
 @article{madronal_Access_2019,
-   html        = {https://univ-rennes.hal.science/hal-02302609/},
+   hal         = {hal-02302609},
     author={Madroñal, Daniel and Arrestier, Florian and Sancho, Jaime and Morvan, Antoine and Lazcano, Raquel and Desnos, Karol and Salvador, Ruben and Menard, Daniel and Juarez, Eduardo and Sanz, Cesar},
     journal     ={IEEE Access}, 
     title={PAPIFY: Automatic Instrumentation and Monitoring of Dynamic Dataflow Applications Based on PAPI}, 
@@ -490,7 +490,7 @@
 }
 
 @article{rubattu_esl_2019,
-   html        = {https://hal.science/hal-02062002/},
+   hal         = {hal-02062002},
   author={Rubattu, Claudio and Palumbo, Francesca and Sau, Carlo and Salvador, Ruben and Sérot, Jocelyn and Desnos, Karol and Raffo, Luigi and Pelcat, Maxime},
   journal={IEEE Embedded Systems Letters},
   title={Dataflow-Functional High-Level Synthesis for Coarse-Grained Reconfigurable Accelerators},
@@ -599,7 +599,7 @@
 }%   RANK    = {Q1 TBU}, note        = {\emph{(IF: 3.244 (2016))}}
 
 @inproceedings{madronal_CF_2018,
-   html        = {https://univ-rennes.hal.science/hal-01881032/},
+   hal         = {hal-01881032},
    author      = {Daniel Madroñal and Raquel Lazcano and Salvador, Ruben and Eduardo Juarez and Cesar Sanz and Antoine Morvan and Karol Desnos},
    title       = {Automatic Instrumentation of Dataflow Applications using PAPI},
    booktitle   = {Proceedings of the 15th ACM International Conference on Computing Frontiers},
@@ -622,7 +622,7 @@
 } 
 
 @article{fabelo_PONE_2018,
-   html        = {https://hal.science/hal-01797885/},
+   hal         = {hal-01797885},
     title       = {Spatio-spectral classification of hyperspectral images for brain cancer detection during surgical operations},
     author      = {Himar Fabelo and Samuel Ortega and Daniele Ravi and Bangalore Ravi Kiran and Coralia Sosa and Diederik Bulters and Gustavo Marrero Callico and Harry Bulstrode and Adam Szolna and Juan F. Piñeiro and Silvester Kabwama and Daniel Madroñal and Raquel Lazcano and Aruma J. O'Shanahan and Sara Bisshopp and María Hernández and Abelardo Báez and Guang-Zhong Yang and Bogdan Stanciulescu and Salvador, Ruben and Eduardo Juárez and Roberto Sarmiento},
     journal     = {PLoS ONE},
@@ -785,7 +785,7 @@
 }
 
 @article{lazcano_JSA_2017,
-   html        = {https://univ-rennes.hal.science/hal-01622064/},
+   hal         = {hal-01622064},
    title       = {Porting a PCA-based hyperspectral image dimensionality reduction algorithm for brain cancer detection on a manycore architecture},
    author      = {Lazcano, Raquel and Madroñal, Daniel and Salvador, Ruben and Desnos, Karol and Pelcat, Maxime and Guerra, Raúl and Fabelo, Himar and Ortega, Samuel and Lopez, Sebastián and Callico, Gustavo Marrero and Juarez, Eduardo and Sanz, César},
    journal     = {Journal of Systems Architecture},
