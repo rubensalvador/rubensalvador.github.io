@@ -11,7 +11,7 @@ category: current
 > :mega::mega: **We are hiring!!** :mega::mega:
 > 
 >
-> 2/3 payed internships: [Side-Channel Security of Deep Learning Implementations](/assets/pdf/Internships_ATTILA_2025.pdf)
+> 2/3 payed internships: [Side-Channel Security of Deep Learning Implementations](/assets/pdf/Internships_ATTILA_2026.pdf)
 
 
 ## Context and objectives
