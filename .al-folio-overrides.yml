@@ -1,0 +1,10 @@
+---
+version: 1
+overrides:
+  assets/css/al-folio-cv.css:
+    owner: al_folio_cv
+    gem_version: 1.0.2
+    upstream_path: assets/css/al-folio-cv.css
+    upstream_sha256: fda7b3abaff31b11664eea670ec0a9358a29cde9b4471e504423e2f4093471d3
+    local_sha256: 40bbc8439fdc6ca749c8bdec8dc24928f53545e44b0fda514243835b00223626
+    acknowledged_at: '2026-11-24'
