@@ -10,7 +10,7 @@ nav_order: 3
 
 <!-- Filter button style (page-local, so no theme override is needed) -->
 <style>
-  .pub-filter { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+  .pub-filter { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
   .pub-filter button {
     font-size: 0.8rem; padding: 0.2rem 0.7rem; border-radius: 1rem; cursor: pointer;
     border: 1px solid var(--global-theme-color); background: transparent; color: var(--global-theme-color);
@@ -25,6 +25,10 @@ nav_order: 3
      data-filter = keywords values of the bib (space-separated). An entry matches if any of its keywords
      (comma-separated, data-keywords from _includes/hook/bib.liquid) is in the list. Buttons without entries are hidden
      (e.g. Tutorials, ready for non-invited tutorials: keywords = {tutorial}). -->
+<!-- Text search (al-folio bib_search): hides the entries that do not contain the typed text; also works from a link,
+     e.g. /publications/#side-channel. It combines with the type buttons below (an entry shows if it passes both). -->
+{% include bib_search.liquid %}
+
 <div class="pub-filter" role="group" aria-label="Filter publications by type">
   <button type="button" class="active" data-filter="all">All</button>
   <button type="button" data-filter="journal">Journals</button>
@@ -67,7 +71,7 @@ nav_order: 3
       // Hide the year headings left without visible entries
       document.querySelectorAll('.publications h2.bibliography').forEach(function (h) {
         var ol = h.nextElementSibling;
-        var any = ol && Array.prototype.some.call(ol.children, function (li) { return li.style.display !== 'none'; });
+        var any = ol && Array.prototype.some.call(ol.children, function (li) { return li.style.display !== 'none' && !li.classList.contains('unloaded'); });
         h.style.display = any ? '' : 'none';
         if (ol) ol.style.display = any ? '' : 'none';
       });

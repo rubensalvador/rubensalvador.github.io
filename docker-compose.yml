@@ -1,7 +1,8 @@
-# this file uses prebuilt image in dockerhub
+# Local preview: `docker compose up` builds the image from ./Dockerfile once (tagged rsalvador-website:local)
+# and serves http://localhost:8080. Rebuild with `docker compose up --build` after changing Gemfile/Dockerfile.
 services:
   jekyll:
-    image: amirpourmand/al-folio:latest
+    image: rsalvador-website:local
     build: .
     command: /srv/jekyll/bin/entry_point.sh
     # uncomment these if you are having this issue with the build:
