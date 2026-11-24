@@ -2,7 +2,6 @@
 layout: page
 title: ATTILA
 description: Addressing securiTy Threats to artIficiaL intelligence in Approximate computing systems
-# redirect: https://address
 importance: 1
 category: current
 ---
@@ -76,7 +75,7 @@ ATIILA's methodology comprises 3 steps:
 
 **Permanent staff:**
 <br />
-[Maria Méndez Real](https://www.ietr.fr/maria-mendez-real), IETR, Polytech Université de Nantes
+[Maria Méndez Real](https://mariamendezreal.github.io/), IETR, Polytech Université de Nantes
 <br />
 [Jean-Christophe Prévotet](https://jprevote.perso.insa-rennes.fr/), IETR, INSA Rennes
 <br />
