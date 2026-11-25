@@ -9,12 +9,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <font size=4>
     <p>Office 505</p>
     <p>Avenue de la Boulaie-CS 47601</p>
     <p>35576, Cesson-Sévigné, France</p>
     <p>Tel: +33 299 84 45 41</p>
-    </font>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
