@@ -7,14 +7,13 @@ nav: true
 nav_order: 2
 horizontal: false
 dropdown: true
-children: 
-    - title: My research
-      permalink: /research/
-    - title: divider
-    - title: Projects
-      permalink: /projects/
+children:
+  - title: My research
+    permalink: /research/
+  - title: divider
+  - title: Projects
+    permalink: /projects/
 ---
-
 
 My research interests span the areas of **hardware security, computer architecture, and reconfigurable computing**. With a background on hardware accelerators and self-adaptive hardware, my latest interests focus on **FPGA and embedded systems security**, particularly on building **hardware and architectural support for security in heterogeneous architectures, hardware accelerators, and emerging computing paradigms**.
 
